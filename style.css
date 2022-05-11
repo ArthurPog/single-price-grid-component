@@ -149,6 +149,7 @@ main {
 }
 
 .c2a button {
+  font-family: inherit;
   color: inherit;
   margin-top: 1.625rem;
   background: var(--clr-BrightYellow);
@@ -159,6 +160,7 @@ main {
   letter-spacing: 1px;
   font-weight: 700;
   box-shadow: 0 10px 10px 0 hsla(0, 0%, 0%, 9.73%);
+  cursor: pointer;
 }
 
 .c2a button:hover {
