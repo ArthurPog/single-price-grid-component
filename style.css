@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+
+  --clr-Cyan: hsl(179, 62%, 43%);
+  --clr-BrightYellow: hsl(71, 73%, 54%);
+  --clr-BrightYellow-Light: hsl(71, 73%, 75%);
+  --clr-LightGray: hsl(204, 43%, 93%);
+  --clr-GrayishBlue: hsl(218, 22%, 67%);
+  --clr-White: white;
+  --clr-White-15: hsla(0, 0%, 100%, 15.19%);
+  --clr-White-50: hsla(0, 0%, 100%, 50%);
+  --clr-White-75: hsla(0, 0%, 100%, 75%);
+
+  --font-size-h1-s: 1.25rem;
+  --font-size-h1-l: 1.5rem;
+  --font-size-guarantee-s: 0.9375rem;
+  --font-size-guarantee-l: 1.125rem;
+  --font-size-pitch-p-s: 0.875rem;
+  --font-size-pitch-p-l: 1rem;
+  --font-size-c2a-h2: 1.125rem;
+  --font-size-price: 2rem;
+  --font-size-why-us-h2: 1.125rem;
+  --font-size-why-us-li: 0.875rem;
+  --font-size-button: 1rem;
+  --letter-spacing-h1-s: -0.015625rem;
+  --letter-spacing-h1-l: -0.01875rem;
+  --letter-spacing-guarantee-s: -0.011875rem;
+  --letter-spacing-guarantee-l: -0.01375rem;
+  --letter-spacing-pitch-p-s: -0.010625rem;
+  --letter-spacing-pitch-p-l: -0.0125rem;
+  --letter-spacing-c2a-h2: -0.01375rem;
+  --letter-spacing-price: -0.025rem;
+  --letter-spacing-interval: -0.0125rem;
+  --letter-spacing-c2a-p: -0.0125rem;
+  --letter-spacing-why-us-h2: -0.01375rem;
+  --letter-spacing-why-us-li: -0.010625rem;
+  --letter-spacing-button: -0.0125rem;
+  --line-height-pitch-p: 1.625rem;
+  --line-height-guarantee: 1.25rem;
+}
+
+/* General reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-LightGray);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--clr-Cyan);
+  font-size: var(--font-size-h1-s);
+  letter-spacing: var(--letter-spacing-h1-s);
+}
+
+.guarantee {
+  font-weight: 700;
+  color: var(--clr-BrightYellow);
+  font-size: var(--font-size-guarantee-s);
+  letter-spacing: var(--letter-spacing-guarantee-s);
+  line-height: var(--line-height-guarantee);
+}
+
+.pitch-p {
+  color: var(--clr-GrayishBlue);
+  font-size: var(--font-size-pitch-p-s);
+  letter-spacing: var(--letter-spacing-pitch-p-s);
+  line-height: var(--line-height-pitch-p);
+}
+
+.c2a-h2 {
+  font-size: var(--font-size-c2a-h2);
+  letter-spacing: var(--letter-spacing-c2a-h2);
+}
+
+.c2a-p {
+  letter-spacing: var(--letter-spacing-c2a-p);
+}
+
+.price {
+  font-size: var(--font-size-price);
+  letter-spacing: var(--letter-spacing-price);
+  font-weight: 700;
+}
+
+.interval {
+  letter-spacing: var(--letter-spacing-interval);
+}
+
+.why-us-h2 {
+  font-size: var(--font-size-why-us-h2);
+  letter-spacing: var(--letter-spacing-why-us-h2);
+}
+
+.why-us-li {
+  font-size: var(--font-size-why-us-li);
+  letter-spacing: var(--letter-spacing-why-us-li);
+}
+
+main {
+  margin: 1rem;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 15px 30px 0 hsl(212, 100%, 34%, 14.88%)
+}
+
+.pitch, .c2a, .why-us  {
+  max-width: 19.4375rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.pitch {
+  background: white;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.guarantee {
+  margin-top: 1.5rem;
+}
+
+.pitch-p {
+  margin-top: 1rem;
+}
+
+.c2a {
+  background: var(--clr-Cyan);
+  color: var(--clr-White);
+  height: 100%;
+}
+
+.c2a-p {
+  margin-top: 0.5rem;
+}
+
+.interval {
+  color: var(--clr-White-50);
+}
+
+.c2a button {
+  color: inherit;
+  margin-top: 1.625rem;
+  background: var(--clr-BrightYellow);
+  border-radius: 0.3125rem;
+  border: 0;
+  padding: 0.9375rem;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: var(--font-size-button);
+}
+
+.c2a button:hover {
+  outline: 0.25rem solid white;
+  background: var(--clr-BrightYellow-Light);
+}
+
+.c2a button:active {
+  color: var(--clr-Cyan);
+  background: var(--clr-White);
+}
+
+.c2a button:focus {
+  outline: 0.25rem solid white;
+  outline-offset: 0.25rem;
+}
+
+.price-interval-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+
+.interval {
+  margin-left: 0.6875rem;
+}
+
+.why-us-container  {
+  background: var(--clr-Cyan);
+  max-width: 19.4375rem;
+  width: 100%;
+  height: 100%;
+}
+
+.why-us {
+  background: var(--clr-White-15);
+  color: var(--clr-White);
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1.125rem;
+  color: var(--clr-White-75);
+}
+
+li {
+  margin-top: .20rem;
+}
+
+@media (min-width: 42em) {
+  h1 {
+    font-size: var(--font-size-h1-l);
+    letter-spacing: var(--letter-spacing-h1-l);
+  }
+  .guarantee {
+    font-size: var(--font-size-guarantee-l);
+    letter-spacing: var(--letter-spacing-guarantee-l);
+    line-height: var(--line-height-guarantee);
+  }
+  .pitch-p {
+    font-size: var(--font-size-pitch-p-l);
+    letter-spacing: var(--letter-spacing-pitch-p-l);
+    line-height: var(--line-height-pitch-p);
+  }
+
+  main {
+    grid-template-columns: auto auto;
+    max-width: 39.6875rem;
+    width: 100%;
+  }
+
+  .pitch, .c2a, .why-us  {
+    padding: 2.5rem;
+    max-width: unset;
+  }
+
+  .why-us-container  {
+    max-width: unset;
+  }
+
+  .pitch {
+    border-radius: 0.5rem 0.5rem 0 0;
+    grid-column: 1/3;
+  }
+}
