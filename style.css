@@ -150,6 +150,7 @@ main {
 
 .c2a button {
   font-family: inherit;
+  font-size: 1rem;
   color: inherit;
   margin-top: 1.625rem;
   background: var(--clr-BrightYellow);
