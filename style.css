@@ -111,7 +111,9 @@ main {
   margin: 1rem;
   display: grid;
   place-items: center;
-  box-shadow: 0 15px 30px 0 hsl(212, 100%, 34%, 14.88%)
+  box-shadow: 0 15px 30px 0 hsl(212, 100%, 34%, 14.88%);
+  border-radius: 0.3125rem;
+  overflow: hidden;
 }
 
 .pitch, .c2a, .why-us  {
@@ -122,7 +124,6 @@ main {
 
 .pitch {
   background: white;
-  border-radius: 0.3125rem 0.3125rem 0 0;
 }
 
 .guarantee {
@@ -157,7 +158,6 @@ main {
   width: 100%;
   letter-spacing: 1px;
   font-weight: 700;
-  font-size: var(--font-size-button);
 }
 
 .c2a button:hover {
@@ -226,9 +226,11 @@ li {
   }
 
   main {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     max-width: 39.6875rem;
     width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
   }
 
   .pitch, .c2a, .why-us  {
@@ -241,7 +243,6 @@ li {
   }
 
   .pitch {
-    border-radius: 0.5rem 0.5rem 0 0;
     grid-column: 1/3;
   }
 }
