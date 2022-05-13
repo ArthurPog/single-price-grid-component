@@ -162,6 +162,7 @@ main {
   font-weight: 700;
   box-shadow: 0 10px 10px 0 hsla(0, 0%, 0%, 9.73%);
   cursor: pointer;
+  transition: ease-out .3s;
 }
 
 .c2a button:hover {
