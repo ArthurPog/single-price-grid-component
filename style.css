@@ -158,7 +158,6 @@ main {
   border: 0;
   padding: 0.9375rem;
   width: 100%;
-  letter-spacing: 1px;
   font-weight: 700;
   box-shadow: 0 10px 10px 0 hsla(0, 0%, 0%, 9.73%);
   cursor: pointer;
